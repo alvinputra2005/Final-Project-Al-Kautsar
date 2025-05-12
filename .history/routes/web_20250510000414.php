@@ -1,0 +1,59 @@
+<?php
+
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UlasanController;
+use App\Http\Controllers\AlumnisController;
+use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\PrestasiController;
+use App\Http\Controllers\TendikController;
+use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Route;
+
+// Homepage (Landing Page)
+Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
+Route::get('home', [PageController::class, 'home'])->name('home');
+
+// Halaman Login (opsional)
+Route::get('home/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('home/login', [LoginController::class, 'login']); // Proses login
+Route::post('home/logout', [LoginController::class, 'logout'])->name('logout');
+
+// Rute Admin (Manajemen Ulasan dan Alumnis) Tanpa Prefix atau Grouping
+// Rute untuk Dashboard Admin
+Route::get('admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');  // Admin dashboard
+
+// Rute untuk Admin - Menampilkan Daftar Ulasan
+Route::get('admin/ulasan', [UlasanController::class, 'index'])->name('admin.ulasan.index');
+
+// Rute untuk Admin - Mengedit Ulasan
+Route::get('admin/ulasan/{id}/edit', [UlasanController::class, 'edit'])->name('admin.ulasan.edit');
+Route::put('admin/ulasan/{id}', [UlasanController::class, 'update'])->name('admin.ulasan.update');
+
+// Rute untuk Admin - Menghapus Ulasan
+Route::delete('admin/ulasan/{id}', [UlasanController::class, 'destroy'])->name('admin.ulasan.destroy');
+
+// Rute untuk Alumni
+Route::get('admin/alumnis', [AlumnisController::class, 'index'])->name('admin.alumnis.index');
+Route::get('admin/alumnis/create', [AlumnisController::class, 'create'])->name('admin.alumnis.create');
+Route::post('admin/alumnis', [AlumnisController::class, 'store'])->name('admin.alumnis.store');
+Route::get('admin/alumnis/{id}/edit', [AlumnisController::class, 'edit'])->name('admin.alumnis.edit');
+Route::put('admin/alumnis/{id}', [AlumnisController::class, 'update'])->name('admin.alumnis.update');
+Route::delete('admin/alumnis/{id}', [AlumnisController::class, 'destroy'])->name('admin.alumnis.destroy');
+
+// Rute untuk Pengguna (lihat ulasan)
+Route::get('home/ulasan', [UlasanController::class, 'index2'])->name('ulasan.index2');  // Menampilkan ulasan untuk semua orang
+Route::get('home/create', [UlasanController::class, 'create'])->name('ulasan.create'); // Halaman tambah ulasan
+Route::post('ulasan', [UlasanController::class, 'store'])->name('ulasan.store');  // Proses tambah ulasan
+
+// Rute untuk alumni (lihat alumni)
+Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumni');
+
+// Rute untuk Tendik
+Route::get('home/tendik', [TendikController::class, 'index'])->name('tendik');
+
+// Rute untuk kegiatan
+Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
+
+// Rute untuk prestasi
+Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
