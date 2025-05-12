@@ -62,11 +62,6 @@
             </div>
 
             <div class="form-group">
-                <label for="asal">Asal</label>
-                <input type="text" name="asal" id="asal" class="form-control" value="{{ old('asal') }}">
-            </div>
-
-            <div class="form-group">
                 <label for="contact">Kontak</label>
                 <input type="text" name="contact" id="contact" class="form-control" value="{{ old('contact') }}">
             </div>

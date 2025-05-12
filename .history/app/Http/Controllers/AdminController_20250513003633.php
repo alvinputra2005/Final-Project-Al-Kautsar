@@ -42,27 +42,26 @@ class AdminController extends Controller
     // Menyimpan Data Alumni
     public function storeAlumni(Request $request)
     {
-    // Validasi data yang masuk
-    $validated = $request->validate([
-        'nama' => 'required|string|max:255',
-        'jenis_kelamin' => 'required|string|max:10',
-        'kampus' => 'required|string|max:255',
-        'angkatan' => 'required|integer',
-        'pekerjaan' => 'required|string|max:255',
-        'bidang_keahlian' => 'required|string|max:255',
-        'pengalaman' => 'nullable|string',
-        'asal' => 'nullable|string',
-        'contact' => 'nullable|string',
-        'riwayat_pendidikan' => 'nullable|string',
-    ]);
+        // Validasi data yang masuk
+        $validated = $request->validate([
+            'nama' => 'required|string|max:255',
+            'jenis_kelamin' => 'required|string|max:10',
+            'kampus' => 'required|string|max:255',
+            'angkatan' => 'required|integer',
+            'pekerjaan' => 'required|string|max:255',
+            'bidang_keahlian' => 'required|string|max:255',
+            'pengalaman' => 'nullable|string',
+            'asal' => 'nullable|string',
+            'contact' => 'nullable|string',
+            'riwayat_pendidikan' => 'nullable|string',
+        ]);
 
-    // Menyimpan data alumni baru
-    Alumnis::create($validated);
+        // Menyimpan data alumni baru
+        Alumnis::create($validated);
 
-    // Redirect ke halaman alumni dengan notifikasi sukses
-    return redirect()->route('admin.alumnis.index')->with('success', 'Alumni berhasil ditambahkan');
+        // Redirect ke halaman alumni dengan notifikasi sukses
+        return redirect()->route('admin.alumnis.index')->with('success', 'Alumni berhasil ditambahkan');
     }
-
 
     // Menampilkan form untuk edit alumni (Admin)
     public function editAlumni($id)

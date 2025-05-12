@@ -44,13 +44,13 @@
                     <td>{{ $item->riwayat_pendidikan }}</td>
                     <td>
                         <!-- Tombol Sunting -->
-                        <a href="{{ route('admin.alumnis.edit', $item->id) }}" class="btn btn-warning btn-sm mx-1">Sunting</a>
+                        <a href="{{ route('admin.alumnis.edit', $item->id) }}" class="btn btn-warning">Sunting</a>
                         
-                        <!-- Form Hapus dengan konfirmasi -->
-                        <form action="{{ route('admin.alumnis.destroy', $item->id) }}" method="POST" style="display:inline;" onsubmit="return confirmDelete()">
+                        <!-- Form Hapus -->
+                        <form action="{{ route('admin.alumnis.destroy', $item->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm mx-1">Hapus</button>
+                            <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
                     </td>
                 </tr>
@@ -58,11 +58,4 @@
             </tbody>
         </table>
     </div>
-
-    <!-- Script untuk konfirmasi sebelum menghapus -->
-    <script>
-        function confirmDelete() {
-            return confirm("Apakah Anda yakin ingin menghapus alumni ini?");
-        }
-    </script>
 @endsection
