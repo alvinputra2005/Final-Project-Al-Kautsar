@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
@@ -41,7 +41,7 @@ class AdminController extends Controller
 
     // Menyimpan Data Alumni
     public function storeAlumni(Request $request)
-    {
+{
     // Validasi data yang masuk
     $validated = $request->validate([
         'nama' => 'required|string|max:255',
@@ -61,8 +61,7 @@ class AdminController extends Controller
 
     // Redirect ke halaman alumni dengan notifikasi sukses
     return redirect()->route('admin.alumnis.index')->with('success', 'Alumni berhasil ditambahkan');
-    }
-
+}
 
     // Menampilkan form untuk edit alumni (Admin)
     public function editAlumni($id)
@@ -93,7 +92,6 @@ class AdminController extends Controller
         // Memperbarui data alumni
         $alumni->update($validated);
 
-        // Redirect ke alumni index
         return redirect()->route('admin.alumnis.index')->with('success', 'Alumni berhasil diperbarui');
     }
 

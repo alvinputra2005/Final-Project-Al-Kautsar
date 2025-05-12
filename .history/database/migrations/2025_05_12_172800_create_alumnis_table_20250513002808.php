@@ -20,6 +20,8 @@ class CreateAlumnisTable extends Migration
             $table->string('contact')->nullable();
             $table->text('riwayat_pendidikan')->nullable();
             $table->timestamps();
+            // Menambahkan field session atau lainnya jika perlu
+            $table->string('session_id')->nullable();  // Contoh menambahkan session_id
         });
     }
 

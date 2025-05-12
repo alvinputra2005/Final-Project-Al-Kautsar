@@ -31,11 +31,10 @@
             </div>
 
             <div class="form-group">
-            <label for="jenis_kelamin">Jenis Kelamin</label><br>
-            <input type="radio" name="jenis_kelamin" value="Laki-laki" id="jenis_kelamin_laki" {{ old('jenis_kelamin') == 'Laki-laki' ? 'checked' : '' }}> Laki-laki
-            <input type="radio" name="jenis_kelamin" value="Perempuan" id="jenis_kelamin_perempuan" {{ old('jenis_kelamin') == 'Perempuan' ? 'checked' : '' }}> Perempuan
-            </div>
-
+        <label for="jenis_kelamin">Jenis Kelamin</label><br>
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" id="jenis_kelamin_laki" {{ old('jenis_kelamin') == 'Laki-laki' ? 'checked' : '' }}> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" id="jenis_kelamin_perempuan" {{ old('jenis_kelamin') == 'Perempuan' ? 'checked' : '' }}> Perempuan
+</div>
             <div class="form-group">
                 <label for="kampus">Kampus</label>
                 <input type="text" name="kampus" id="kampus" class="form-control" value="{{ old('kampus') }}" required>
@@ -59,11 +58,6 @@
             <div class="form-group">
                 <label for="pengalaman">Pengalaman</label>
                 <textarea name="pengalaman" id="pengalaman" class="form-control">{{ old('pengalaman') }}</textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="asal">Asal</label>
-                <input type="text" name="asal" id="asal" class="form-control" value="{{ old('asal') }}">
             </div>
 
             <div class="form-group">

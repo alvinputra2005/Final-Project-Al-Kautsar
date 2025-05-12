@@ -41,7 +41,7 @@ class AdminController extends Controller
 
     // Menyimpan Data Alumni
     public function storeAlumni(Request $request)
-    {
+{
     // Validasi data yang masuk
     $validated = $request->validate([
         'nama' => 'required|string|max:255',
