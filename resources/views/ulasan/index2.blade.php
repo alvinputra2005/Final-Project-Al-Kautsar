@@ -20,7 +20,8 @@
             background: linear-gradient(to right, #006699, #004466);
             color: white;
             padding: 30px;
-            border-radius: 12px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
             margin-bottom: 30px;
             text-align: center;
         }
@@ -58,13 +59,13 @@
 </head>
 <body>
 
-<div class="container">
     <div class="header text-center">
         <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar" class="logo-pondok" id="hidden=button">
-
         <h2 class="mt-3">Ulasan Pengunjung</h2>
         <p>PPM Al Kautsar - Kuliah nomor 1, Mondok nomor 1</p>
     </div>
+
+<div class="container">
 
     <!-- Tabel Ulasan -->
     <div class="table-responsive">
@@ -91,7 +92,7 @@
 
     <!-- Tombol Kembali ke Beranda -->
     <div class="text-left mb-5 ml-4">
-        <a href="{{ route('home') }}" class="btn btn-outline-primary">← Kembali ke Beranda</a>
+        <a href="{{ route('home') }}#testimoni" class="btn btn-outline-primary">← Kembali ke Halaman Utama</a>
     </div>
 </div>
 

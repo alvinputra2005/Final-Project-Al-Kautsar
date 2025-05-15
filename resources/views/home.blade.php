@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <section id="sejarah" class="section-sejarah">
+  <section id="sejarah" class="section-sejarah" style="scroll-margin-top: 45px;">
     <div class="container text-center">
         <h2 class="mb-5">Sejarah Kami</h2>
       <div class="row align-items-center">
@@ -331,7 +331,7 @@
     <!-- <a class="lihat-semua" href="kegiatan.php">Lihat Semua Kegiatan <i class="fas fa-arrow-right"></i></a> -->
   </section>
   
-  <section  class="container my-5" id="prestasi" style="scroll-margin-top: 1px;">
+  <section  class="container my-5" id="prestasi" style="scroll-margin-top: 75px;">
     <div class="d-flex justify-content-between align-items-center mb-4" >
       <h2>Prestasi</h2>
       <a href="{{ route('prestasi') }}" class="btn btn-outline-primary"><i class="fas fa-medal"></i>Prestasi Selengkapnya</a>

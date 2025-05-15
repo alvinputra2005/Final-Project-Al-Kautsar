@@ -1,4 +1,4 @@
-<footer class="footer" id="footer">
+<footer class="footer" id="footer" style="scroll-margin-top: 50px;">
     <div class="footer-container">
       <div class="footer-top">
         <div class="footer-about">
@@ -28,20 +28,21 @@
           <div class="footer-links-container">
             <div class="footer-links-group">
               <div class="footer-links">
-                <h3>Selengkapnya</h3>
+                <h3>Lanjutan</h3>
                 <ul>
                     <li><a href="{{ route('tendik') }}">Biodata TENDIK</a></li>
                     <li><a href="{{ route('santri') }}">Biodata Santri</a></li>
-                    <li><a href="{{ route('alumnis') }}">Biodata Alumni</a></li> <!-- Uncomment if Alumni controller is created -->
+                    <li><a href="{{ route('alumnis') }}">Biodata Alumni</a></li>
+                    <li><a href="{{ route('sarpras') }}">Biodata Sarpras</a></li>
                 </ul>
               </div>
               <div class="footer-links">
               <ul>
                   <br>
                   <br>
-                  <li><a href="{{ route('sarpras') }}">Fasilitas</a></li>
-                  <li><a href="{{ route('prestasi') }}">Prestasi</a></li>
+                  <li><a href="{{ route('ulasan.create') }}">Tambah Ulasan</a></li>
                   <li><a href="{{ route('kegiatan') }}">Kegiatan Tahunan</a></li>
+                  <li><a href="{{ route('prestasi') }}">Prestasi</a></li>
               </ul>
               </div>
             </div>

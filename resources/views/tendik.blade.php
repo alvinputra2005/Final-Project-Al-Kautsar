@@ -39,7 +39,6 @@ body {
     border-radius: 12px;
   }
   
-  
   .header-left h1 {
     margin: 0;
     font-size: 1.8rem;

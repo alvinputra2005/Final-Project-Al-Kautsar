@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Admin PPM Al Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -101,12 +100,6 @@
                     <h3>Total Alumni</h3>
                     <p>{{ count($alumni) }}</p>
                 </div>
-            </div>
-            
-            <!-- Content -->
-            <div id="content">
-                <h3>Selamat datang di Dashboard Admin</h3>
-                <p>Pilih menu di sidebar untuk mengelola data Ulasan atau Alumni.</p>
             </div>
         </div>
     </div>

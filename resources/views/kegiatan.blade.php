@@ -158,7 +158,7 @@ footer {
         <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo">
         <h1>Kegiatan Tahunan PPM Al Kautsar</h1>
     </div>
-    <a href="{{ route('home') }}" class="back-button">&larr; Kembali ke Beranda Utama</a>
+    <a href="{{ url('home') }}#kegiatan" class="back-button">&larr; Kembali ke Beranda Utama</a>
 </header>
 
 <div class="container">

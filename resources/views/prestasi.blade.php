@@ -177,7 +177,7 @@
       <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo">
       <h1>Prestasi PPM Al Kautsar</h1>
     </div>
-    <a href="{{ route('home') }}" class="back-button">&larr; Kembali ke Beranda Utama</a>
+    <a href="{{ url('home') }}#prestasi" class="back-button">&larr; Kembali ke Beranda Utama</a>
   </div>
 
   <!-- PRESTASI SECTION -->
@@ -195,7 +195,7 @@ Mereka tidak hanya mengandalkan pengetahuan agama yang mendalam, tetapi juga mem
     <!-- Card biasa -->
     <div class="prestasi-card">
       <h3>Juara 2 MHQ Tingkat Kabupaten</h3>
-      <p>Muhammad Iqbal meraih peringkat kedua dalam Musabaqah Hifdzil Qur’an tingkat Kabupaten Tulungagung.</p>
+      <p>Muhammad Iqbal berhasil meraih prestasi membanggakan dengan menempati peringkat kedua dalam ajang Musabaqah Hifdzil Qur’an tingkat Kabupaten Tulungagung. Kompetisi yang diikuti oleh peserta dari berbagai kecamatan ini merupakan ajang bergengsi untuk menguji kemampuan dalam menghafal Al-Qur’an. Keberhasilan ini tidak hanya menjadi kebanggaan bagi dirinya sendiri, tetapi juga bagi keluarga, guru pembimbing, dan lembaga tempat ia menimba ilmu. Semangat dan ketekunan Iqbal dalam menghafal Al-Qur’an menjadi inspirasi bagi generasi muda lainnya untuk terus mencintai dan mendalami kitab suci Al-Qur’an.</p>
     </div>
 
     <!-- Card dengan gambar besar -->
@@ -225,7 +225,7 @@ Mereka tidak hanya mengandalkan pengetahuan agama yang mendalam, tetapi juga mem
     <!-- Card gaya border kiri -->
     <div class="prestasi-card card-border">
       <h3>Juara Desain Poster Hari Santri</h3>
-      <p>Desain karya santri Alif Ramadhan digunakan oleh PCNU sebagai poster resmi Hari Santri 2024.</p>
+      <p>Desain karya Alif Ramadhan, salah satu santri berbakat, terpilih sebagai poster resmi untuk peringatan Hari Santri 2024. Karya tersebut menampilkan perpaduan yang menarik antara nilai-nilai keislaman, semangat perjuangan santri, dan estetika visual yang kuat, sehingga mampu mencuri perhatian panitia penyelenggara. Terpilihnya desain ini menjadi bukti bahwa santri tidak hanya memiliki kemampuan dalam bidang keagamaan, tetapi juga mampu berkontribusi dalam dunia seni dan kreatif. Prestasi ini menjadi kebanggaan tersendiri bagi Alif dan menjadi motivasi bagi santri lainnya untuk terus mengembangkan potensi di berbagai bidang.</p>
     </div>
 
     <!-- Card dengan ikon -->

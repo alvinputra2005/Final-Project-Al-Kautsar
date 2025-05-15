@@ -255,119 +255,119 @@ body {
 </header>
 
 <main class="infra-page">
-    <section class="infra-title">
-        <h2>Sarana & Prasarana</h2>
-    </section>
+  <section class="infra-title">
+    <h2>Sarana & Prasarana</h2>
+  </section>
 
-    <div class="infra-row">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras1.jpg') }}" alt="Ruang Sekretariat">
-        </div>
-        <div class="infra-text">
-            <h3>Ruang Sekretariat</h3>
-            <p>Ruangan untuk menyimpan segala keperluan administratif atau arsip yang dimiliki PPM.</p>
-        </div>
+  <div class="infra-row">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras1.jpg') }}" alt="Ruang Sekretariat">
     </div>
+    <div class="infra-text">
+      <h3>Ruang Sekretariat</h3>
+      <p>Ruang Sekretariat berfungsi sebagai pusat kegiatan administratif di lingkungan PPM. Di sini tersimpan dokumen penting, arsip kegiatan, data santri, serta perlengkapan tulis kantor. Ruangan ini digunakan untuk koordinasi staf pengurus harian, pencatatan keuangan, dan dokumentasi surat-menyurat resmi.</p>
+    </div>
+  </div>
 
-    <div class="infra-row reverse">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras2.jpg') }}" alt="Majelis Ta'lim">
-        </div>
-        <div class="infra-text">
-            <h3>Majelis Ta'lim</h3>
-            <p>Ruangan untuk menjalankan KBM atau acara kebersamaan atau rapat bulanan PPM.</p>
-        </div>
+  <div class="infra-row reverse">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras2.jpg') }}" alt="Majelis Ta'lim">
     </div>
+    <div class="infra-text">
+      <h3>Majelis Ta'lim</h3>
+      <p>Majelis Ta’lim merupakan ruang utama untuk kegiatan pembelajaran keagamaan, pengajian kitab, serta forum diskusi santri dan ustadz. Ruangan ini juga difungsikan sebagai tempat pelaksanaan rapat akbar, seminar internal, dan pelatihan pengembangan soft skill santri.</p>
+    </div>
+  </div>
 
-    <div class="infra-row">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras3.jpg') }}" alt="Ruang Tamu">
-        </div>
-        <div class="infra-text">
-            <h3>Ruang Tamu</h3>
-            <p>Tempat untuk menerima tamu yang merupakan pengunjung ppm atau keluarga dari para santri, biasanya juga diarahkan ke kamar tamu yang telah tersedia.</p>
-        </div>
+  <div class="infra-row">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras3.jpg') }}" alt="Ruang Tamu">
     </div>
+    <div class="infra-text">
+      <h3>Ruang Tamu</h3>
+      <p>Ruang Tamu berfungsi sebagai area penerimaan bagi tamu luar, wali santri, atau pihak eksternal yang ingin berkunjung ke pondok. Didesain dengan suasana yang nyaman dan ramah, ruangan ini menunjukkan sikap profesional dalam menjalin relasi dengan masyarakat dan stakeholder pondok.</p>
+    </div>
+  </div>
 
-    <div class="infra-row reverse">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras4.jpg') }}" alt="Masjid/Tempat Ibadah">
-        </div>
-        <div class="infra-text">
-            <h3>Masjid/Tempat Ibadah</h3>
-            <p>Tempat untuk beribadah para santri dan penghuni asrama bahkan para masyarakat sekitar.</p>
-        </div>
+  <div class="infra-row reverse">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras4.jpg') }}" alt="Masjid/Tempat Ibadah">
     </div>
+    <div class="infra-text">
+      <h3>Masjid / Tempat Ibadah</h3>
+      <p>Masjid menjadi pusat kegiatan spiritual seluruh civitas PPM. Selain sebagai tempat sholat berjamaah lima waktu, masjid juga digunakan untuk ceramah agama, dzikir bersama, dan kajian tafsir. Fasilitas ini terbuka untuk masyarakat sekitar dan menjadi simbol integrasi pondok dengan komunitas lokal.</p>
+    </div>
+  </div>
 
-    <div class="infra-row">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras5.jpg') }}" alt="Ruang Musyawarah">
-        </div>
-        <div class="infra-text">
-            <h3>Ruang Musyawarah</h3>
-            <p>Walau terkadang rapat itu berada pada majelis ta'lim, tapi jika skala rapatnya inti yang bersifat rahasia, ruangan ini tempatnya.</p>
-        </div>
+  <div class="infra-row">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras5.jpg') }}" alt="Ruang Musyawarah">
     </div>
+    <div class="infra-text">
+      <h3>Ruang Musyawarah</h3>
+      <p>Ruang Musyawarah merupakan tempat strategis bagi rapat-rapat internal yang bersifat privat dan rahasia. Biasanya digunakan oleh dewan pengurus inti untuk menyusun kebijakan, menyelesaikan masalah internal, serta mengevaluasi program kerja pondok secara berkala.</p>
+    </div>
+  </div>
 
-    <div class="infra-row reverse">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras6.jpg') }}" alt="Dapur">
-        </div>
-        <div class="infra-text">
-            <h3>Dapur</h3>
-            <p>Para penghuni asrama bisa memanfaatkan dapur untuk memasak makanan.</p>
-        </div>
+  <div class="infra-row reverse">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras6.jpg') }}" alt="Dapur">
     </div>
+    <div class="infra-text">
+      <h3>Dapur</h3>
+      <p>Dapur PPM digunakan oleh santri dan pengurus untuk memasak makanan sehari-hari, baik untuk kegiatan pribadi maupun kolektif. Fasilitas ini dilengkapi dengan kompor, peralatan masak, dan bahan pokok yang dikelola secara bergilir oleh kelompok piket santri.</p>
+    </div>
+  </div>
 
-    <div class="infra-row">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras7.jpg') }}" alt="Koperasi Santri">
-        </div>
-        <div class="infra-text">
-            <h3>Koperasi Santri</h3>
-            <p>Tempat para santri bisa membeli jajanan dan tempat bagi Unit Kegiatan Santri KWU berjualan.</p>
-        </div>
+  <div class="infra-row">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras7.jpg') }}" alt="Koperasi Santri">
     </div>
+    <div class="infra-text">
+      <h3>Koperasi Santri</h3>
+      <p>Koperasi Santri adalah fasilitas ekonomi internal yang menyediakan kebutuhan harian seperti makanan ringan, alat tulis, perlengkapan mandi, dan lainnya. Selain itu, koperasi juga menjadi tempat praktek kewirausahaan bagi santri yang mengikuti kegiatan Unit Kegiatan Santri (UKS) bidang ekonomi kreatif.</p>
+    </div>
+  </div>
 
-    <div class="infra-row reverse">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras8.jpg') }}" alt="Parkiran">
-        </div>
-        <div class="infra-text">
-            <h3>Parkiran</h3>
-            <p>Tempat meletakkan kendaraan bagi para penghuni asrama.</p>
-        </div>
+  <div class="infra-row reverse">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras8.jpg') }}" alt="Parkiran">
     </div>
+    <div class="infra-text">
+      <h3>Parkiran</h3>
+      <p>Area parkir di lingkungan pondok disediakan untuk kendaraan pribadi santri, pengajar, dan tamu. Penataan yang teratur serta sistem keamanan menjaga kendaraan tetap aman dan tertib. Area ini juga digunakan untuk apel kegiatan luar ruangan bila diperlukan.</p>
+    </div>
+  </div>
 
-    <div class="infra-row">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras9.jpg') }}" alt="Kamar Asrama">
-        </div>
-        <div class="infra-text">
-            <h3>Kamar Asrama</h3>
-            <p>Sejumlah kurang lebih 39 kamar untuk bertempatnya para santri.</p>
-        </div>
+  <div class="infra-row">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras9.jpg') }}" alt="Kamar Asrama">
     </div>
+    <div class="infra-text">
+      <h3>Kamar Asrama</h3>
+      <p>Terdapat sekitar 39 kamar asrama yang menjadi tempat tinggal para santri selama masa belajar. Setiap kamar dirancang untuk kenyamanan dan kedisiplinan dengan sistem piket kebersihan, jadwal tidur, serta lingkungan yang mendukung kehidupan islami dan akademis.</p>
+    </div>
+  </div>
 
-    <div class="infra-row reverse">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras10.jpg') }}" alt="Jemuran">
-        </div>
-        <div class="infra-text">
-            <h3>Jemuran</h3>
-            <p>Tempat para santri atau penghuni asrama menempatkan baju mereka setelah dicuci agar kering.</p>
-        </div>
+  <div class="infra-row reverse">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras10.jpg') }}" alt="Jemuran">
     </div>
+    <div class="infra-text">
+      <h3>Jemuran</h3>
+      <p>Fasilitas jemuran disediakan di area terbuka yang cukup luas dan mendapatkan sinar matahari langsung. Para santri dapat menjemur pakaian dengan rapi dan bergantian, dengan sistem pengelolaan waktu agar tidak terjadi penumpukan pakaian antar penghuni kamar.</p>
+    </div>
+  </div>
 
-    <div class="infra-row">
-        <div class="infra-img">
-            <img src="{{ asset('img/sarpras11.jpg') }}" alt="Kamar Mandi">
-        </div>
-        <div class="infra-text">
-            <h3>Kamar Mandi</h3>
-            <p>21 lebih Kamar Mandi yang dapat siap digunakan para penghuni asrama.</p>
-        </div>
+  <div class="infra-row">
+    <div class="infra-img">
+      <img src="{{ asset('img/sarpras11.jpg') }}" alt="Kamar Mandi">
     </div>
+    <div class="infra-text">
+      <h3>Kamar Mandi</h3>
+      <p>Terdapat lebih dari 21 kamar mandi yang tersebar di area asrama. Fasilitas ini senantiasa dijaga kebersihannya oleh para santri yang dijadwalkan piket. Air bersih tersedia 24 jam, dan kamar mandi didesain agar memenuhi standar sanitasi yang baik dan sehat bagi seluruh penghuni.</p>
+    </div>
+  </div>
 </main>
 
 <footer>

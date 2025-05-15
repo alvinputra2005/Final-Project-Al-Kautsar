@@ -110,7 +110,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-block">Simpan Ulasan</button>
-                <a href="{{ route('home') }}" class="btn btn-secondary btn-block">Batal</a>
+                <a href="{{ route('home') }}#testimoni" class="btn btn-secondary btn-block">Batal</a>
             </form>
         </div>
     </div>
