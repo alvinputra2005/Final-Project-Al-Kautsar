@@ -59,8 +59,8 @@
         }
 
         .header h2 {
-            font-weight: bold;
-        }
+    font-weight: bold;
+}
 
 
         .logo-pondok {

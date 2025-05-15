@@ -58,17 +58,12 @@
             margin-bottom: 20px;
         }
 
-        .header h2 {
-            font-weight: bold;
-        }
-
-
         .logo-pondok {
             width: 60px;
             height: 60px;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 15px;
+            margin
         }
 
         .dashboard-info {

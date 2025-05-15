@@ -18,7 +18,6 @@ class AdminController extends Controller
         // Kirim data ke view dashboard
         return view('admin.dashboard.index', compact('ulasan', 'alumni'));  // Tampilkan data ke view admin.dashboard.index
     }
-    
     // Menampilkan daftar ulasan (Admin)
     public function ulasan()
     {

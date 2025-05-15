@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-  // Menampilkan Dashboard Admin
+    // Menampilkan Dashboard Admin
     public function index()
     {
         // Ambil data ulasan dan alumni
@@ -16,9 +16,9 @@ class AdminController extends Controller
         $alumni = Alumnis::all(); // Ambil semua alumni
 
         // Kirim data ke view dashboard
-        return view('admin.dashboard.index', compact('ulasan', 'alumni'));  // Tampilkan data ke view admin.dashboard.index
+        return view('admin.index', compact('ulasan', 'alumni'));  // Tampilkan data ke view admin.index
     }
-    
+z
     // Menampilkan daftar ulasan (Admin)
     public function ulasan()
     {

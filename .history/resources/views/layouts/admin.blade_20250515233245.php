@@ -16,35 +16,55 @@
             padding: 0;
         }
 
-        /* Sidebar tetap di kiri dan tidak ikut bergulir */
+        /* Sidebar */
         .sidebar {
+            background-color: #006699;
+            color: white;
+            height: 100vh;
+            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #006699;
-            color: white;
-            width: 220px;
-            height: 100vh;
+            transition: width 0.3s ease;
             padding-top: 20px;
-            overflow-y: auto; /* Membuat sidebar bisa digulir jika kontennya melebihi */
-            z-index: 100;
+        }
+
+        .sidebar.shrink {
+            width: 70px;
         }
 
         .sidebar a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 15px 20px;
             display: block;
+            font-size: 16px;
+            transition: 0.3s;
         }
 
-        .sidebar a:hover, .sidebar a.active {
+        .sidebar a:hover,
+        .sidebar a.active {
             background-color: #004466;
+            transform: scale(1.05);
         }
 
-        /* Content area mulai setelah sidebar */
+        /* Sidebar Logo */
+        .logo-pondok {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
         .content-area {
-            margin-left: 240px; /* Memberikan ruang untuk sidebar */
+            margin-left: 250px;
             padding: 20px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .content-area.shrink {
+            margin-left: 70px;
         }
 
         .header {
@@ -55,26 +75,13 @@
             color: white;
             padding: 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .header h2 {
-            font-weight: bold;
-        }
-
-
-        .logo-pondok {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
         }
 
         .dashboard-info {
             margin-top: 20px;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .dashboard-info .card {
@@ -84,9 +91,16 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             width: 30%;
             text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .dashboard-info .card h3 {
+        .dashboard-info .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
             color: #006699;
             font-weight: bold;
         }
@@ -100,7 +114,7 @@
                 <img src="{{ asset('img/logoppm.jpeg') }}" class="logo-pondok" alt="Logo PPM Al Kautsar">
                 <h4>PPM Al Kautsar</h4>
             </div>
-            <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">Dashboard</a>
+           <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">Dashboard</a>
             <a href="{{ route('admin.ulasan.index') }}" class="{{ request()->routeIs('admin.ulasan.index') ? 'active' : '' }}">Ulasan</a>
             <a href="{{ route('admin.alumnis.index') }}" class="{{ request()->routeIs('admin.alumnis.index') ? 'active' : '' }}">Alumnis</a>
         </div>
@@ -111,7 +125,7 @@
                 <h2>Dashboard Admin</h2>
                 <button class="btn btn-danger">Logout</button>
             </div>
-            
+
             <!-- Content yang diganti per halaman -->
             @yield('content')
         </div>
@@ -121,5 +135,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Toggle Sidebar
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('shrink');
+            document.querySelector('.content-area').classList.toggle('shrink');
+        }
+    </script>
 </body>
 </html>

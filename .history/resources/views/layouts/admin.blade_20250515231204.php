@@ -7,7 +7,7 @@
     <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    
     <style>
         body {
             background-color: #f4f6f9;
@@ -16,37 +16,78 @@
             padding: 0;
         }
 
-        /* Sidebar tetap di kiri dan tidak ikut bergulir */
+        /* Sidebar */
         .sidebar {
+            background-color: #006699;
+            color: white;
+            height: 100vh;
+            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #006699;
-            color: white;
-            width: 220px;
-            height: 100vh;
+            transition: width 0.3s ease;
+            z-index: 1000;
             padding-top: 20px;
-            overflow-y: auto; /* Membuat sidebar bisa digulir jika kontennya melebihi */
-            z-index: 100;
+        }
+
+        .sidebar.shrink {
+            width: 70px;
         }
 
         .sidebar a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 15px 20px;
             display: block;
+            font-size: 16px;
+            transition: 0.3s;
         }
 
-        .sidebar a:hover, .sidebar a.active {
+        .sidebar a:hover {
             background-color: #004466;
+            transform: scale(1.05);
         }
 
-        /* Content area mulai setelah sidebar */
+        /* Sidebar Logo */
+        .logo-pondok {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .sidebar.shrink .logo-pondok {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Menu Toggle Button */
+        .menu-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            z-index: 1100;
+        }
+
+        /* Content Area */
         .content-area {
-            margin-left: 240px; /* Memberikan ruang untuk sidebar */
+            margin-left: 250px;
             padding: 20px;
+            transition: margin-left 0.3s ease;
         }
 
+        .content-area.shrink {
+            margin-left: 70px;
+        }
+
+        /* Header */
         .header {
             display: flex;
             justify-content: space-between;
@@ -55,26 +96,14 @@
             color: white;
             padding: 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
         }
 
-        .header h2 {
-            font-weight: bold;
-        }
-
-
-        .logo-pondok {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
+        /* Dashboard Info Cards */
         .dashboard-info {
             margin-top: 20px;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .dashboard-info .card {
@@ -84,11 +113,38 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             width: 30%;
             text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dashboard-info .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
 
         .dashboard-info .card h3 {
             color: #006699;
             font-weight: bold;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Button Styling */
+        .btn {
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0055a5;
         }
     </style>
 </head>
@@ -100,13 +156,13 @@
                 <img src="{{ asset('img/logoppm.jpeg') }}" class="logo-pondok" alt="Logo PPM Al Kautsar">
                 <h4>PPM Al Kautsar</h4>
             </div>
-            <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">Dashboard</a>
-            <a href="{{ route('admin.ulasan.index') }}" class="{{ request()->routeIs('admin.ulasan.index') ? 'active' : '' }}">Ulasan</a>
-            <a href="{{ route('admin.alumnis.index') }}" class="{{ request()->routeIs('admin.alumnis.index') ? 'active' : '' }}">Alumnis</a>
+            <a href="{{ route('admin.ulasan.index') }}">Ulasan</a>
+            <a href="{{ route('admin.alumnis.index') }}">Alumnis</a>
         </div>
 
         <!-- Content Area -->
         <div class="content-area w-100">
+            <button class="menu-toggle" onclick="toggleSidebar()">&#9776;</button>
             <div class="header">
                 <h2>Dashboard Admin</h2>
                 <button class="btn btn-danger">Logout</button>
@@ -121,5 +177,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('shrink');
+            document.querySelector('.content-area').classList.toggle('shrink');
+        }
+    </script>
 </body>
 </html>

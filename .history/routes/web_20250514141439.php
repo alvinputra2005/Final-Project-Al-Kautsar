@@ -16,7 +16,7 @@ Route::get('home', [PageController::class, 'home'])->name('home');
 //-------------------------------------------------------------------------------------------//
 
 // Rute untuk Dashboard Admin
-Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
+Route::get('admin', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
 
 // Rute untuk Admin - Menampilkan Daftar Ulasan dan bisa Edit serta Delete
 Route::get('admin/ulasan', [AdminController::class, 'ulasan'])->name('admin.ulasan.index');
@@ -55,3 +55,7 @@ Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiata
 Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
 
 
+-- Mendeklarasikan level dan skor karakter
+let level = 5  -- Level karakter dalam game
+let score = 100  -- Skor karakter
+let totalPoints = level * score  -- Menghitung total poin berdasarkan level dan skor

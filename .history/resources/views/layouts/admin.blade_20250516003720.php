@@ -16,9 +16,8 @@
             padding: 0;
         }
 
-        /* Sidebar tetap di kiri dan tidak ikut bergulir */
         .sidebar {
-            position: fixed;
+            position: fixed; /* Membuat sidebar tetap saat scroll */
             top: 0;
             left: 0;
             background-color: #006699;
@@ -26,8 +25,7 @@
             width: 220px;
             height: 100vh;
             padding-top: 20px;
-            overflow-y: auto; /* Membuat sidebar bisa digulir jika kontennya melebihi */
-            z-index: 100;
+            padding-right: 10px;
         }
 
         .sidebar a {
@@ -41,9 +39,8 @@
             background-color: #004466;
         }
 
-        /* Content area mulai setelah sidebar */
         .content-area {
-            margin-left: 240px; /* Memberikan ruang untuk sidebar */
+            margin-left: 240px; /* Memberikan ruang untuk sidebar yang tetap */
             padding: 20px;
         }
 
@@ -55,20 +52,13 @@
             color: white;
             padding: 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
         }
-
-        .header h2 {
-            font-weight: bold;
-        }
-
 
         .logo-pondok {
             width: 60px;
             height: 60px;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 15px;
         }
 
         .dashboard-info {

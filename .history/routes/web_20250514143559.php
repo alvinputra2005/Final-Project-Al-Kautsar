@@ -16,7 +16,7 @@ Route::get('home', [PageController::class, 'home'])->name('home');
 //-------------------------------------------------------------------------------------------//
 
 // Rute untuk Dashboard Admin
-Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
+Route::get('admin', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
 
 // Rute untuk Admin - Menampilkan Daftar Ulasan dan bisa Edit serta Delete
 Route::get('admin/ulasan', [AdminController::class, 'ulasan'])->name('admin.ulasan.index');
@@ -54,4 +54,7 @@ Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiata
 // Rute untuk prestasi
 Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
 
-
+-- Menggunakan operator bind (>>=) untuk menghubungkan operasi
+divideAndAdd :: Double -> Double -> Double -> Maybe Double
+divideAndAdd x y z = divide x y >>= \result -> return (result + z)
+-- Fungsi ini akan membagi x dengan y, lalu menambahkan z ke hasilnya

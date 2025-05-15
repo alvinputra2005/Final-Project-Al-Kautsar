@@ -7,27 +7,20 @@
     <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
 
     <style>
         body {
             background-color: #f4f6f9;
             font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
-        /* Sidebar tetap di kiri dan tidak ikut bergulir */
         .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
+            position: fixed
             background-color: #006699;
             color: white;
-            width: 220px;
-            height: 100vh;
             padding-top: 20px;
-            overflow-y: auto; /* Membuat sidebar bisa digulir jika kontennya melebihi */
-            z-index: 100;
+            height: 100vh;
         }
 
         .sidebar a {
@@ -41,9 +34,7 @@
             background-color: #004466;
         }
 
-        /* Content area mulai setelah sidebar */
         .content-area {
-            margin-left: 240px; /* Memberikan ruang untuk sidebar */
             padding: 20px;
         }
 
@@ -55,20 +46,13 @@
             color: white;
             padding: 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
         }
-
-        .header h2 {
-            font-weight: bold;
-        }
-
 
         .logo-pondok {
             width: 60px;
             height: 60px;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 15px;
         }
 
         .dashboard-info {

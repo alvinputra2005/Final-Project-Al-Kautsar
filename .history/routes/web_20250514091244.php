@@ -16,7 +16,7 @@ Route::get('home', [PageController::class, 'home'])->name('home');
 //-------------------------------------------------------------------------------------------//
 
 // Rute untuk Dashboard Admin
-Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
+Route::get('admin', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
 
 // Rute untuk Admin - Menampilkan Daftar Ulasan dan bisa Edit serta Delete
 Route::get('admin/ulasan', [AdminController::class, 'ulasan'])->name('admin.ulasan.index');
@@ -35,7 +35,6 @@ Route::post('admin/alumnis', [AdminController::class, 'storeAlumni'])->name('adm
 Route::get('admin/alumnis/{id}/edit', [AdminController::class, 'editAlumni'])->name('admin.alumnis.edit');
 Route::put('admin/alumnis/{id}', [AdminController::class, 'updateAlumni'])->name('admin.alumnis.update');
 Route::delete('admin/alumnis/{id}', [AdminController::class, 'destroyAlumni'])->name('admin.alumnis.destroy');
-
 //Rute untuk Pengguna (lihat alumni)
 Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumnis');
 
@@ -53,5 +52,4 @@ Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiata
 
 // Rute untuk prestasi
 Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
-
 

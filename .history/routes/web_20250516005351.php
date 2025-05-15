@@ -16,7 +16,7 @@ Route::get('home', [PageController::class, 'home'])->name('home');
 //-------------------------------------------------------------------------------------------//
 
 // Rute untuk Dashboard Admin
-Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
+Route::get('admin/dasboard', [AdminController::class, 'index'])->name('admin.dashboard');  // Admin dashboard
 
 // Rute untuk Admin - Menampilkan Daftar Ulasan dan bisa Edit serta Delete
 Route::get('admin/ulasan', [AdminController::class, 'ulasan'])->name('admin.ulasan.index');

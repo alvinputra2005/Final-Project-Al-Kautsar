@@ -58,7 +58,7 @@
             margin-bottom: 20px;
         }
 
-        .header h2 {
+                .header h2 {
             font-weight: bold;
         }
 

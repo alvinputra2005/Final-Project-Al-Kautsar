@@ -58,11 +58,6 @@
             margin-bottom: 20px;
         }
 
-        .header h2 {
-            font-weight: bold;
-        }
-
-
         .logo-pondok {
             width: 60px;
             height: 60px;
