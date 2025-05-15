@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SarPras PPM Al-Kautsar</title>
+    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 </head>
 
@@ -250,7 +251,7 @@ body {
         <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
         <h1>Sarana & Prasarana PPM Al Kautsar</h1>
     </div>
-    <a href="{{ url('home') }}" class="back-button">&larr; Kembali ke Beranda Utama</a>
+    <a href="{{ url('home') }}#statistik" class="back-button">&larr; Kembali ke Beranda Utama</a>
 </header>
 
 <main class="infra-page">

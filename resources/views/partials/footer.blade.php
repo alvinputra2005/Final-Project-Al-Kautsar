@@ -38,6 +38,7 @@
               <div class="footer-links">
               <ul>
                   <br>
+                  <br>
                   <li><a href="{{ route('sarpras') }}">Fasilitas</a></li>
                   <li><a href="{{ route('prestasi') }}">Prestasi</a></li>
                   <li><a href="{{ route('kegiatan') }}">Kegiatan Tahunan</a></li>

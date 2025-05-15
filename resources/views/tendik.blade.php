@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tenaga Kependidikan PPM Al Kautsar</title>
+  <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
 </head>
 <body>
 
@@ -304,7 +305,7 @@ footer {
 
 <footer>
   <div class="container">
-    <p>&copy; 2025 PPM Al Kautsar. Semua hak cipta dilindungi. | Dikembangkan oleh Tim Meownyala</p>
+    <p>&copy; 2025 PPM Al Kautsar. All rights reserved. | Developed by Meownyala Team</p>
   </div>
 </footer>
 

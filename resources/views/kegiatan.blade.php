@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kegiatan Tahunan - PPM Al Kautsar</title>
+    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
 </head>
 <body>
 <style>
