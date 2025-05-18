@@ -113,6 +113,7 @@
                 @csrf
                  <button type="submit" class="btn btn-danger">Logout</button>
                 </form>
+
             </div>
             
             <!-- Content yang diganti per halaman -->

@@ -5,21 +5,28 @@ use App\Http\Controllers\AlumnisController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\TendikController;
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SantriController;
+use App\Http\Controllers\LoginController;
+
 use App\Http\Controllers\SarprasController;
 use Illuminate\Support\Facades\Route;
 
-// Rite untuk login bos
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
+// Homepage (Landing Page)
+Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
+Route::get('home', [PageController::class, 'home'])->name('home');
+//-------------------------------------------------------------------------------------------//
 
-//nganu
 Route::middleware('auth')->group(function () {
+
     // Dashboard Admin
     Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+
+    use App\Http\Controllers\LoginController;
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
     // Admin - Daftar Ulasan dan CRUD
     Route::get('admin/ulasan', [AdminController::class, 'ulasan'])->name('admin.ulasan.index');
@@ -37,17 +44,11 @@ Route::middleware('auth')->group(function () {
 
 });
 
-
-// Homepage (Landing Page)
-Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
-Route::get('home', [PageController::class, 'home'])->name('home');
-//-------------------------------------------------------------------------------------------//
-    
-
 // Rute untuk Pengguna (lihat ulasan)
 Route::get('home/ulasan', [UlasanController::class, 'index2'])->name('ulasan.index2');  // Menampilkan ulasan untuk semua orang
 Route::get('home/create', [UlasanController::class, 'create'])->name('ulasan.create'); // Halaman tambah ulasan
 Route::post('ulasan', [UlasanController::class, 'store'])->name('ulasan.store');  // Proses tambah ulasan
+
 
 //Rute untuk Pengguna (lihat alumni)
 Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumnis');
@@ -66,6 +67,5 @@ Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiata
 
 // Rute untuk prestasi
 Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
-
 
 

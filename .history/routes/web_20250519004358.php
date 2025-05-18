@@ -58,14 +58,14 @@ Route::get('home/santri', [SantriController::class, 'index'])->name('santri');
 // Rute untuk Pengguna (lihat tendik)
 Route::get('home/tendik', [TendikController::class, 'index'])->name('tendik');
 
-// Rute untuk Pengguna (lihat Sarpras)
-Route::get('home/sarpras', [SarprasController::class, 'index'])->name('sarpras');
+    // Rute untuk Pengguna (lihat Sarpras)
+    Route::get('home/sarpras', [SarprasController::class, 'index'])->name('sarpras');
 
-// Rute untuk kegiatan
-Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
+    // Rute untuk kegiatan
+    Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
 
-// Rute untuk prestasi
-Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
+    // Rute untuk prestasi
+    Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
 
 
 

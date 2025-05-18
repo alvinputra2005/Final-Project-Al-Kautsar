@@ -37,12 +37,13 @@ Route::middleware('auth')->group(function () {
 
 });
 
-
+// Route lain yang pakai middleware logout kalau bukan admin area
+Route::middleware('logout.if.not.admin')->group(function () {
 // Homepage (Landing Page)
 Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
 Route::get('home', [PageController::class, 'home'])->name('home');
 //-------------------------------------------------------------------------------------------//
-    
+   
 
 // Rute untuk Pengguna (lihat ulasan)
 Route::get('home/ulasan', [UlasanController::class, 'index2'])->name('ulasan.index2');  // Menampilkan ulasan untuk semua orang
@@ -67,5 +68,8 @@ Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiata
 // Rute untuk prestasi
 Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
 
+
+
+});
 
 

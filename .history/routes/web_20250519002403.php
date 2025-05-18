@@ -38,34 +38,34 @@ Route::middleware('auth')->group(function () {
 });
 
 
-// Homepage (Landing Page)
-Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
-Route::get('home', [PageController::class, 'home'])->name('home');
-//-------------------------------------------------------------------------------------------//
+    // Homepage (Landing Page)
+    Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
+    Route::get('home', [PageController::class, 'home'])->name('home');
+    //-------------------------------------------------------------------------------------------//
     
 
-// Rute untuk Pengguna (lihat ulasan)
-Route::get('home/ulasan', [UlasanController::class, 'index2'])->name('ulasan.index2');  // Menampilkan ulasan untuk semua orang
-Route::get('home/create', [UlasanController::class, 'create'])->name('ulasan.create'); // Halaman tambah ulasan
-Route::post('ulasan', [UlasanController::class, 'store'])->name('ulasan.store');  // Proses tambah ulasan
+    // Rute untuk Pengguna (lihat ulasan)
+    Route::get('home/ulasan', [UlasanController::class, 'index2'])->name('ulasan.index2');  // Menampilkan ulasan untuk semua orang
+    Route::get('home/create', [UlasanController::class, 'create'])->name('ulasan.create'); // Halaman tambah ulasan
+    Route::post('ulasan', [UlasanController::class, 'store'])->name('ulasan.store');  // Proses tambah ulasan
 
-//Rute untuk Pengguna (lihat alumni)
-Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumnis');
+    //Rute untuk Pengguna (lihat alumni)
+    Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumnis');
 
-// Rute untuk Pengguna (lihat  santri)
-Route::get('home/santri', [SantriController::class, 'index'])->name('santri');
+    // Rute untuk Pengguna (lihat  santri)
+    Route::get('home/santri', [SantriController::class, 'index'])->name('santri');
 
-// Rute untuk Pengguna (lihat tendik)
-Route::get('home/tendik', [TendikController::class, 'index'])->name('tendik');
+    // Rute untuk Pengguna (lihat tendik)
+    Route::get('home/tendik', [TendikController::class, 'index'])->name('tendik');
 
-// Rute untuk Pengguna (lihat Sarpras)
-Route::get('home/sarpras', [SarprasController::class, 'index'])->name('sarpras');
+    // Rute untuk Pengguna (lihat Sarpras)
+    Route::get('home/sarpras', [SarprasController::class, 'index'])->name('sarpras');
 
-// Rute untuk kegiatan
-Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
+    // Rute untuk kegiatan
+    Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
 
-// Rute untuk prestasi
-Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
-
+    // Rute untuk prestasi
+    Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
+});
 
 

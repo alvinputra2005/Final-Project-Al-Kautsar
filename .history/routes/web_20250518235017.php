@@ -11,6 +11,11 @@ use App\Http\Controllers\SantriController;
 use App\Http\Controllers\SarprasController;
 use Illuminate\Support\Facades\Route;
 
+// Homepage (Landing Page)
+Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
+Route::get('home', [PageController::class, 'home'])->name('home');
+//-------------------------------------------------------------------------------------------//
+
 // Rite untuk login bos
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
@@ -37,17 +42,20 @@ Route::middleware('auth')->group(function () {
 
 });
 
-
-// Homepage (Landing Page)
+// Route lain yang pakai middleware logout kalau bukan admin area
+Route::middleware('logout.if.not.admin')-// Homepage (Landing Page)
 Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
 Route::get('home', [PageController::class, 'home'])->name('home');
-//-------------------------------------------------------------------------------------------//
-    
+//-------------------------------------------------------------------------------------------//>group(function () {
+
+    // route selain admin lainnya
+});
 
 // Rute untuk Pengguna (lihat ulasan)
 Route::get('home/ulasan', [UlasanController::class, 'index2'])->name('ulasan.index2');  // Menampilkan ulasan untuk semua orang
 Route::get('home/create', [UlasanController::class, 'create'])->name('ulasan.create'); // Halaman tambah ulasan
 Route::post('ulasan', [UlasanController::class, 'store'])->name('ulasan.store');  // Proses tambah ulasan
+
 
 //Rute untuk Pengguna (lihat alumni)
 Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumnis');
@@ -66,6 +74,5 @@ Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiata
 
 // Rute untuk prestasi
 Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
-
 
 

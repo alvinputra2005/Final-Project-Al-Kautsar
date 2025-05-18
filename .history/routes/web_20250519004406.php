@@ -65,7 +65,7 @@ Route::get('home/sarpras', [SarprasController::class, 'index'])->name('sarpras')
 Route::get('home/kegiatan', [KegiatanController::class, 'index'])->name('kegiatan');
 
 // Rute untuk prestasi
-Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
+    Route::get('home/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
 
 
 

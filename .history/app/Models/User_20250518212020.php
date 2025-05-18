@@ -8,11 +8,8 @@ class User extends Authenticatable
 {
     protected $fillable = ['username', 'password'];
 
-    // Agar login pakai username, bukan email
     public function username()
     {
         return 'username';
     }
-
-    protected $hidden = ['password', 'remember_token'];
 }

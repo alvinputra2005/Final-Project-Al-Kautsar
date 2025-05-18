@@ -109,10 +109,7 @@
         <div class="content-area w-100">
             <div class="header">
                 <h2>Dashboard Admin</h2>
-                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                @csrf
-                 <button type="submit" class="btn btn-danger">Logout</button>
-                </form>
+                <button class="btn btn-danger">Logout</button>
             </div>
             
             <!-- Content yang diganti per halaman -->

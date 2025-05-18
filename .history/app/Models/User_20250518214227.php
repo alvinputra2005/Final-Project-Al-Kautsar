@@ -9,7 +9,7 @@ class User extends Authenticatable
     protected $fillable = ['username', 'password'];
 
     // Agar login pakai username, bukan email
-    public function username()
+    public function getAuthIdentifierName()
     {
         return 'username';
     }
