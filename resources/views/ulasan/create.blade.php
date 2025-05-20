@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Ulasan - PPM Al Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -89,7 +89,7 @@
 <body>
     <!-- Konten Formulir -->
     <div class="container text-center">
-        <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo Pondok" class="logo-pondok" id="logo-pondok">
+        <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo Pondok" class="logo-pondok" id="logo-pondok">
         <div class="form-card text-left">
             <h3 class="text-center mb-4">Tambah Ulasan</h3>
             <form action="{{ route('ulasan.store') }}" method="POST" onsubmit="return confirmSubmit()">
@@ -121,10 +121,6 @@
             return confirm("Pastikan ulasan yang Anda tulis sudah benar?");
         }
 
-        // Event listener untuk logo yang bisa di-klik
-        document.getElementById('logo-pondok').addEventListener('click', function() {
-            document.getElementById('hidden-button').click();
-        });
     </script>
 </body>
 </html>

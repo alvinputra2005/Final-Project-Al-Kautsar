@@ -39,8 +39,8 @@ Route::middleware('auth')->group(function () {
 
 
 // Homepage (Landing Page)
-Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
-Route::get('home', [PageController::class, 'home'])->name('home');
+// Route::get('/', [PageController::class, 'home'])->name('home'); // Route utama ke halaman home
+Route::get('/home', [PageController::class, 'home'])->name('home');
 //-------------------------------------------------------------------------------------------//
     
 

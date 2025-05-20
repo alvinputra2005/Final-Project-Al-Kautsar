@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SarPras PPM Al-Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 </head>
 
@@ -248,7 +248,7 @@ body {
 
 <header class="title-section">  
     <div class="header-left">
-        <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
+        <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
         <h1>Sarana & Prasarana PPM Al Kautsar</h1>
     </div>
     <a href="{{ url('home') }}#statistik" class="back-button">&larr; Kembali ke Beranda Utama</a>
@@ -261,7 +261,7 @@ body {
 
   <div class="infra-row">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras1.jpg') }}" alt="Ruang Sekretariat">
+      <img src="{{ url('img/sarpras1.jpg') }}" alt="Ruang Sekretariat">
     </div>
     <div class="infra-text">
       <h3>Ruang Sekretariat</h3>
@@ -271,7 +271,7 @@ body {
 
   <div class="infra-row reverse">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras2.jpg') }}" alt="Majelis Ta'lim">
+      <img src="{{ url('img/sarpras2.jpg') }}" alt="Majelis Ta'lim">
     </div>
     <div class="infra-text">
       <h3>Majelis Ta'lim</h3>
@@ -281,7 +281,7 @@ body {
 
   <div class="infra-row">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras3.jpg') }}" alt="Ruang Tamu">
+      <img src="{{ url('img/sarpras3.jpg') }}" alt="Ruang Tamu">
     </div>
     <div class="infra-text">
       <h3>Ruang Tamu</h3>
@@ -291,7 +291,7 @@ body {
 
   <div class="infra-row reverse">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras4.jpg') }}" alt="Masjid/Tempat Ibadah">
+      <img src="{{ url('img/sarpras4.jpg') }}" alt="Masjid/Tempat Ibadah">
     </div>
     <div class="infra-text">
       <h3>Masjid / Tempat Ibadah</h3>
@@ -301,7 +301,7 @@ body {
 
   <div class="infra-row">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras5.jpg') }}" alt="Ruang Musyawarah">
+      <img src="{{ url('img/sarpras5.jpg') }}" alt="Ruang Musyawarah">
     </div>
     <div class="infra-text">
       <h3>Ruang Musyawarah</h3>
@@ -311,7 +311,7 @@ body {
 
   <div class="infra-row reverse">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras6.jpg') }}" alt="Dapur">
+      <img src="{{ url('img/sarpras6.jpg') }}" alt="Dapur">
     </div>
     <div class="infra-text">
       <h3>Dapur</h3>
@@ -321,7 +321,7 @@ body {
 
   <div class="infra-row">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras7.jpg') }}" alt="Koperasi Santri">
+      <img src="{{ url('img/sarpras7.jpg') }}" alt="Koperasi Santri">
     </div>
     <div class="infra-text">
       <h3>Koperasi Santri</h3>
@@ -331,7 +331,7 @@ body {
 
   <div class="infra-row reverse">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras8.jpg') }}" alt="Parkiran">
+      <img src="{{ url('img/sarpras8.jpg') }}" alt="Parkiran">
     </div>
     <div class="infra-text">
       <h3>Parkiran</h3>
@@ -341,7 +341,7 @@ body {
 
   <div class="infra-row">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras9.jpg') }}" alt="Kamar Asrama">
+      <img src="{{ url('img/sarpras9.jpg') }}" alt="Kamar Asrama">
     </div>
     <div class="infra-text">
       <h3>Kamar Asrama</h3>
@@ -351,7 +351,7 @@ body {
 
   <div class="infra-row reverse">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras10.jpg') }}" alt="Jemuran">
+      <img src="{{ url('img/sarpras10.jpg') }}" alt="Jemuran">
     </div>
     <div class="infra-text">
       <h3>Jemuran</h3>
@@ -361,7 +361,7 @@ body {
 
   <div class="infra-row">
     <div class="infra-img">
-      <img src="{{ asset('img/sarpras11.jpg') }}" alt="Kamar Mandi">
+      <img src="{{ url('img/sarpras11.jpg') }}" alt="Kamar Mandi">
     </div>
     <div class="infra-text">
       <h3>Kamar Mandi</h3>

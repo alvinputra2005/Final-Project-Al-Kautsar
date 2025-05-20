@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tenaga Kependidikan PPM Al Kautsar</title>
-  <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
-</head>
-<body>
-
-    <style>
+  <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
+      <style>
 body {
     font-family: 'Georgia', serif;
     margin: 0;
@@ -235,10 +232,12 @@ footer {
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
   }
     </style>
+</head>
+<body>
 
 <header class="title-section">  
   <div class="header-left">
-    <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
+    <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
     <h1>Tenaga Kependidikan PPM Al Kautsar</h1>
   </div>
   <a href="{{ url('home') }}#statistik" class="back-button">&larr; Kembali ke Beranda Utama</a>
@@ -252,7 +251,7 @@ footer {
         <div class="flip-card-front">
           <div class="card-number">{{ $index + 1 }}</div>
           <div class="card-image-wrapper">
-              <img src="{{ asset($tendik['image']) }}" alt="{{ $tendik['name'] }}" class="card-img">
+              <img src="{{ url($tendik['image']) }}" alt="{{ $tendik['name'] }}" class="card-img">
           </div>
           <div class="card-text">
             <h3>{{ $tendik['name'] }}</h3>
@@ -283,7 +282,7 @@ footer {
   <div class="photo-section">
     <div class="photo-wrapper">
       <h2 class="photo-title">Asisten Tendik PPM Al Kautsar</h2>
-      <img src="{{ asset('/img/tendik.jpg') }}" alt="Foto Bersama Tendik">
+      <img src="{{ url('/img/tendik.jpg') }}" alt="Foto Bersama Tendik">
     </div>
   </div>
 

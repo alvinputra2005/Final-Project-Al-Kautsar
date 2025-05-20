@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Admin - PPM Al Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -97,7 +97,7 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="text-center">
-                <img src="{{ asset('img/logoppm.jpeg') }}" class="logo-pondok" alt="Logo PPM Al Kautsar">
+                <img src="{{ url('img/logoppm.jpeg') }}" class="logo-pondok" alt="Logo PPM Al Kautsar">
                 <h4>PPM Al Kautsar</h4>
             </div>
             <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">Dashboard</a>

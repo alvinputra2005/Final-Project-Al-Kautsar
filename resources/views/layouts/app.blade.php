@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPM Al-Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
 
     <!-- ====== External Styles & Scripts ====== -->
     <!-- Bootstrap CSS -->
@@ -21,20 +21,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
+    <link rel="stylesheet" href="{{ url('css/styles.css') }}" />
     @stack('styles') <!-- Untuk CSS tambahan per halaman -->
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="120">
   <!-- Scroll to Top Button -->
     <a href="#" class="scroll-top" id="scrollTopBtn" aria-label="Scroll to Top">
-        <img src="{{ asset('img/panah.png') }}" alt="Scroll to Top">
+        <img src="{{ url('img/panah.png') }}" alt="Scroll to Top">
     </a>
 
     <!-- WhatsApp Icon -->
     <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Wr.Wb.%2C%20saya%20ingin%20bertanya%20tentang%20PPM%20Al%20Kautsar" 
         class="wa-float" target="_blank" aria-label="Chat via WhatsApp">
-        <img src="{{ asset('img/favicon-64x64.ico') }}" alt="WhatsApp">
+        <img src="{{ url('img/favicon-64x64.ico') }}" alt="WhatsApp">
     </a>
 
     <style>

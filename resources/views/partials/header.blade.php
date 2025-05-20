@@ -2,7 +2,7 @@
 <!-- Navbar Blade -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
     <!-- Logo PPM -->
-    <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 6px;" />
+    <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo PPM" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 6px;" />
     <a class="navbar-brand" href="#beranda-section">PPM Al Kautsar</a>
 
     <!-- Navbar Links -->

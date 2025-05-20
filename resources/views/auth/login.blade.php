@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login - PPM Al Kautsar</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png">
+  <link rel="icon" href="{{ url('img/favicon.png') }}" type="image/png">
   <style>
     body {
-      background: url("{{ asset('img/background.jpg') }}") no-repeat center center fixed;
+      background: url("{{ url('img/background.jpg') }}") no-repeat center center fixed;
       background-size: cover;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -70,7 +70,7 @@
 
   <div class="login-container">
     <div class="login-card">
-      <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM" class="logo">
+      <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo PPM" class="logo">
       <h2 class="login-title">Login Admin</h2>
 
       {{-- Tampilkan notifikasi error manual dari session --}}

@@ -3,7 +3,7 @@
 @section('content')
 <div id="beranda-section" class="position-relative overflow-hidden">
     <div class="carousel-background">
-      <div id="carousel-beranda" class="carousel slide" data-ride="carousel" data-interval="1500">
+      <div id="carousel-beranda" class="carousel slide" data-ride="carousel" data-interval="2500">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/dpn/1.jpg" class="d-block w-100" alt="Foto 1" />
@@ -44,7 +44,7 @@
         <h1>Selamat Datang di PPM Malang Raya</h1>
         <p><b>Pondok Pesantren Mahasiswa Al Kautsar</b> <br>"Sarjana yang Mubalight - Mubalight yang Sarjana"
         <br><i>Kuliah Nomor 1, Mondok Nomor 1</i></p>
-        <a href="https://forms.gle/X4HXBBtRUnuCBTZz6" class="button-pelayanan" target="_blank">Daftar Disini</a>
+        <a href="https://forms.gle/X4HXBBtRUnuCBTZz6" class="button-base button-pelayanan" target="_blank">Daftar Disini</a>
       </div>
     </div>
   </div>
@@ -93,9 +93,9 @@
   </section>
 
   <div class="gradiasi-putih-biru"></div>
-  <section class="section-video" id="profile" style="scroll-margin-top: 32px;">
-    <h2>Video Profil Kami</h2>
-    <p>Saksikan sekilas tentang kehidupan kami.</p>
+  <section id="profile" class="section-video"  style="scroll-margin-top: 32px;">
+    <h2>Video Profil PPM Al Kautsar</h2>
+    <p>Saksikan sekilas tentang PPM kami.</p>
     <div class="video-container">
       <div class="video-embed">
           <video autoplay muted loop controls>
@@ -279,24 +279,24 @@
     </div>
   </section>
   
-<section id="testimoni" style="scroll-margin-top: 10px;">
-    <h2>BOX ULASAN PPM AL KAUTSAR</h2>
-    <div class="google-review">
-        @foreach($ulasan as $item)
-        <div class="review-item">
-            <img src="{{ asset('img/Fotouser.jpg') }}" alt="{{ $item->nama }}">
-            <div class="review-content">
-                <h4>{{ $item->nama }}</h4>
-                <div class="stars">{{ str_repeat("⭐", $item->rating) }}</div>
-                <p>{{ $item->ulasan }}</p>
-            </div>
-        </div>
-        @endforeach
-    </div>
-    <div class="text-center mt-4">
-        <a href="{{ route('ulasan.create') }}" class="btn-keren">Tambahkan Ulasanmu</a>
-    </div>
-</section>
+  <section id="testimoni" style="scroll-margin-top: 10px;">
+      <h2>BOX ULASAN PPM AL KAUTSAR</h2>
+      <div class="google-review">
+          @foreach($ulasan as $item)
+          <div class="review-item">
+              <img src="{{ url('img/Fotouser.jpg') }}" alt="{{ $item->nama }}">
+              <div class="review-content">
+                  <h4>{{ $item->nama }}</h4>
+                  <div class="stars">{{ str_repeat("⭐", $item->rating) }}</div>
+                  <p>{{ $item->ulasan }}</p>
+              </div>
+          </div>
+          @endforeach
+      </div>
+      <div class="text-center mt-4">
+          <a href="{{ route('ulasan.create') }}" class="btn-keren">Tambahkan Ulasanmu</a>
+      </div>
+  </section>
   
   <section id="kegiatan" style="scroll-margin-top: 22px;">
     <h2>Kegiatan Pondok</h2>
@@ -305,7 +305,7 @@
       <img src="img/ac1.jpg" alt="Pesantren Ramadhan">
       <div class="overlay-text">
         <h3>Silaturahim Syawal 1446H</h3>
-        <p>Bersalam salaman antar santri, saling memaafkan dan mempererat persaudaraan.</p>
+        <p>Saling memaafkan dan mempererat persaudaraan.</p>
         <a href="{{ route('kegiatan') }}" class="btn-kegiatan"><i class="fas fa-users"></i>Kegiatan lainnya</a>
       </div>
     </div>
@@ -331,7 +331,7 @@
     <!-- <a class="lihat-semua" href="kegiatan.php">Lihat Semua Kegiatan <i class="fas fa-arrow-right"></i></a> -->
   </section>
   
-  <section  class="container my-5" id="prestasi" style="scroll-margin-top: 75px;">
+  <section  id="prestasi" class="container my-5"  style="scroll-margin-top: 75px;">
     <div class="d-flex justify-content-between align-items-center mb-4" >
       <h2>Prestasi</h2>
       <a href="{{ route('prestasi') }}" class="btn btn-outline-primary"><i class="fas fa-medal"></i>Prestasi Selengkapnya</a>
@@ -364,7 +364,8 @@
       </div>
     </div>
   </section>
-@endsection
+
+  @endsection
 
 @push('styles')
 <link href="{{ asset('css/home.css') }}" rel="stylesheet">
