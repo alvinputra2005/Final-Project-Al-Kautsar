@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ulasan Pengunjung - PPM Al Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -60,7 +60,7 @@
 <body>
 
     <div class="header text-center">
-        <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar" class="logo-pondok" id="hidden=button">
+        <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar" class="logo-pondok" id="hidden=button">
         <h2 class="mt-3">Ulasan Pengunjung</h2>
         <p>PPM Al Kautsar - Kuliah nomor 1, Mondok nomor 1</p>
     </div>

@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <!-- Script untuk Chart.js -->
+    <!-- Script untuk Chart.js
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Statistik Penyebaran Santri
@@ -92,7 +92,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
 
     <!-- Kustom CSS untuk memastikan spasi antar card -->
     <style>

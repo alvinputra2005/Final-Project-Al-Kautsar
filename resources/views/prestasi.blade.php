@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prestasi PPM Al Kautsar</title>
-  <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+  <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
   <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background: url('{{ asset("img/background.jpg") }}') no-repeat center center;
+      background: url('{{ url("img/background.jpg") }}') no-repeat center center;
       background-size: cover;
       color: #333;
     }
@@ -174,7 +174,7 @@
   <!-- HEADER -->
   <div class="header">
     <div class="header-left">
-      <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo">
+      <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo">
       <h1>Prestasi PPM Al Kautsar</h1>
     </div>
     <a href="{{ url('home') }}#prestasi" class="back-button">&larr; Kembali ke Beranda Utama</a>
@@ -200,7 +200,7 @@ Mereka tidak hanya mengandalkan pengetahuan agama yang mendalam, tetapi juga mem
 
     <!-- Card dengan gambar besar -->
     <div class="prestasi-card card-image">
-      <img src="{{ asset('img/kg1.jpg') }}" alt="Trophy">
+      <img src="{{ url('img/kg1.jpg') }}" alt="Trophy">
       <h3>Juara 3 Futsal Pesantren Jatim</h3>
       <p>Tim futsal santri PPM Al Kautsar sukses meraih juara 3 di ajang turnamen antar pesantren se-Jawa Timur.</p>
     </div>
@@ -239,16 +239,16 @@ Mereka tidak hanya mengandalkan pengetahuan agama yang mendalam, tetapi juga mem
     
     <!-- Card hanya gambar -->
     <div class="prestasi-card photo-only">
-      <img src="{{ asset('img/kg2.jpg') }}" alt="Prestasi Medali">
+      <img src="{{ url('img/kg2.jpg') }}" alt="Prestasi Medali">
     </div>
 
     <div class="prestasi-card photo-only">
-      <img src="{{ asset('img/kg4.jpg') }}" alt="Santri Juara">
+      <img src="{{ url('img/kg4.jpg') }}" alt="Santri Juara">
     </div>
 
     <!-- Card gambar dan teks -->
     <div class="prestasi-card card-image">
-      <img src="{{ asset('img/kg3.jpg') }}" alt="Team">
+      <img src="{{ url('img/kg3.jpg') }}" alt="Team">
       <h3>Best Team Spirit – Pesantren Competition</h3>
       <p>PPM Al Kautsar mendapatkan penghargaan Best Team Spirit pada kompetisi antar pesantren Jawa Timur.</p>
     </div>
@@ -276,7 +276,7 @@ Mereka tidak hanya mengandalkan pengetahuan agama yang mendalam, tetapi juga mem
 
     <!-- Card hanya gambar -->
     <div class="prestasi-card photo-only">
-      <img src="{{ asset('img/kg5.jpg') }}" alt="Award">
+      <img src="{{ url('img/kg5.jpg') }}" alt="Award">
     </div>
 
   </section>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kegiatan Tahunan - PPM Al Kautsar</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
 </head>
 <body>
 <style>
@@ -155,7 +155,7 @@ footer {
 
 <header>
     <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo">
+        <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo">
         <h1>Kegiatan Tahunan PPM Al Kautsar</h1>
     </div>
     <a href="{{ url('home') }}#kegiatan" class="back-button">&larr; Kembali ke Beranda Utama</a>
@@ -246,7 +246,7 @@ function showActivity(index) {
   const act = activities[index];
   content.innerHTML = `
     <h2>${act.date}</h2>
-    <img src="{{ asset('${act.image}') }}" alt="Dokumentasi Kegiatan ${act.date}">
+    <img src="{{ url('${act.image}') }}" alt="Dokumentasi Kegiatan ${act.date}">
     <p>${act.description}</p>
   `;
 

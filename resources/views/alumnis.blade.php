@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Daftar Alumni - PPM Al Kautsar</title>
-        <link rel="icon" type="image/jpeg" href="{{ asset('img/logoppm.jpeg') }}">
+        <link rel="icon" type="image/jpeg" href="{{ url('img/logoppm.jpeg') }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -163,7 +163,7 @@
     <body>
     <header class="title-section">  
     <div class="header-left">
-        <img src="{{ asset('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
+        <img src="{{ url('img/logoppm.jpeg') }}" alt="Logo PPM Al Kautsar">
         <h1>Daftar Alumni PPM Al Kautsar</h1>
     </div>
     <a href="{{ url('home') }}#statistik" class="back-button">&larr; Kembali ke Beranda Utama</a>
