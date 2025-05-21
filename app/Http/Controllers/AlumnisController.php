@@ -9,10 +9,19 @@ class AlumnisController extends Controller
     // Menampilkan daftar alumni untuk pengguna (hanya melihat)
     public function index()
     {
-        // Ambil data alumni dengan pagination (8 per halaman)
-        $alumni = Alumnis::paginate(6);
+        // Ambil data alumni dengan pagination (10 per halaman)
+        $alumni = Alumnis::paginate(10);
 
         // Kirim data ke view
         return view('alumnis', compact('alumni'));
     }
+    public function adminIndex()
+    {
+        // Ambil data alumni dengan pagination
+        $alumni = Alumnis::orderBy('id', 'desc')->paginate(10);
+
+        // Arahkan ke view khusus admin
+        return view('admin.alumnis.index', compact('alumni'));
+    }
+
 }

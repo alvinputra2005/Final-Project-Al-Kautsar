@@ -1,81 +1,129 @@
 @extends('layouts.admin')
 
 @section('content')
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
-        body {
-            background-color: #f0f4f8;
-            font-family: 'Segoe UI', sans-serif;
-        }
+    body {
+        background-color: #f0f4f8;
+        font-family: 'Segoe UI', sans-serif;
+    }
 
-        .container {
-            max-width: 600px;
-            margin-top: 40px;
-        }
+    .container {
+        max-width: 600px;
+        margin-top: 60px;
+    }
 
-        .form-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,102,153,0.1);
-        }
+    .form-card {
+        background: white;
+        padding: 35px 30px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 102, 153, 0.15);
+        transition: transform 0.3s ease;
+    }
 
-        .form-card h3 {
-            color: #006699;
-            font-weight: bold;
-        }
+    .form-card:hover {
+        transform: translateY(-5px);
+    }
 
-        .btn-primary {
-            background-color: #006699;
-            border: none;
-        }
+    .form-title {
+        color: #006699;
+        font-weight: bold;
+        margin-bottom: 25px;
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+    }
 
-        .btn-primary:hover {
-            background-color: #004466;
-        }
+    .form-title i {
+        margin-right: 10px;
+        color: #006699;
+    }
 
-        .logo-pondok {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-    </style>
+    .form-group label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #333;
+    }
 
-    <div class="container text-center">
-        <!-- Form Card -->
-        <div class="form-card text-left">
-            <h3 class="text-center mb-4">Edit Testimoni</h3>
+    .form-control {
+        border-radius: 10px;
+        padding: 10px 15px;
+        border: 1px solid #ccd6dd;
+        transition: border-color 0.3s;
+    }
 
-            <!-- Form Edit Ulasan -->
-            <form action="{{ route('admin.ulasan.update', $ulasan->id) }}" method="POST">
-                @csrf
-                @method('PUT') <!-- Menggunakan metode PUT untuk update -->
+    .form-control:focus {
+        border-color: #006699;
+        box-shadow: 0 0 5px rgba(0,102,153,0.3);
+    }
 
-                <!-- Input Nama -->
-                <div class="form-group">
-                    <label for="nama">Nama</label>
-                    <input type="text" name="nama" id="nama" class="form-control" value="{{ old('nama', $ulasan->nama) }}" required>
-                </div>
+    .btn-primary {
+        background-color: #006699;
+        border: none;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
 
-                <!-- Input Ulasan -->
-                <div class="form-group">
-                    <label for="ulasan">Ulasan</label>
-                    <textarea name="ulasan" id="ulasan" class="form-control" rows="4" required>{{ old('ulasan', $ulasan->ulasan) }}</textarea>
-                </div>
+    .btn-primary:hover {
+        background-color: #004466;
+    }
 
-                <!-- Input Rating -->
-                <div class="form-group">
-                    <label for="rating">Rating (1-5)</label>
-                    <input type="number" name="rating" id="rating" class="form-control" min="1" max="5" value="{{ old('rating', $ulasan->rating) }}" required>
-                </div>
+    .btn-secondary {
+        background-color: #ccc;
+        border: none;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
 
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary btn-block">Update</button>
+    .btn-secondary:hover {
+        background-color: #bbb;
+    }
+</style>
 
-                <!-- Cancel Button -->
-                <a href="{{ route('admin.ulasan.index') }}" class="btn btn-secondary btn-block">Batal</a>
-            </form>
-        </div>
+<div class="container">
+    <div class="form-card">
+        <!-- Judul dengan ikon -->
+        <h3 class="form-title">
+            <i class="fas fa-pen-fancy"></i> Edit Testimoni
+        </h3>
+
+        <form action="{{ route('admin.ulasan.update', $ulasan->id) }}" method="POST">
+            @csrf
+            @method('PUT')
+
+            <!-- Input Nama -->
+            <div class="form-group mb-3">
+                <label for="nama"><i class="fas fa-user"></i> Nama</label>
+                <input type="text" name="nama" id="nama" class="form-control" value="{{ old('nama', $ulasan->nama) }}" required>
+            </div>
+
+            <!-- Input Ulasan -->
+            <div class="form-group mb-3">
+                <label for="ulasan"><i class="fas fa-comment-dots"></i> Ulasan</label>
+                <textarea name="ulasan" id="ulasan" class="form-control" rows="4" required>{{ old('ulasan', $ulasan->ulasan) }}</textarea>
+            </div>
+
+            <!-- Input Rating -->
+            <div class="form-group mb-4">
+                <label for="rating"><i class="fas fa-star"></i> Rating (1-5)</label>
+                <input type="number" name="rating" id="rating" class="form-control" min="1" max="5" value="{{ old('rating', $ulasan->rating) }}" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan Perubahan</button>
+
+            <!-- Cancel Button -->
+            <a href="{{ route('admin.ulasan.index') }}" class="btn btn-secondary"><i class="fas fa-times"></i> Batal</a>
+        </form>
     </div>
+</div>
 @endsection

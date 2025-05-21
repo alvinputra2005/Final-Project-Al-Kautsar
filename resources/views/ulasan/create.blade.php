@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f0f4f8;
+                  background: url("{{ url('img/background.jpg') }}") no-repeat center center fixed;
+      background-size: cover;
             font-family: 'Segoe UI', sans-serif;
         }
 
