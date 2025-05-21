@@ -32,7 +32,7 @@
     </a>
 
     <!-- WhatsApp Icon -->
-    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Wr.Wb.%2C%20saya%20ingin%20bertanya%20tentang%20PPM%20Al%20Kautsar" 
+    <a href="https://wa.me/6285646322300?text=Assalamu'alaikum%20Wr.Wb.%2C%20saya%20ingin%20bertanya%20tentang%20PPM%20Al%20Kautsar" 
         class="wa-float" target="_blank" aria-label="Chat via WhatsApp">
         <img src="{{ url('img/favicon-64x64.ico') }}" alt="WhatsApp">
     </a>

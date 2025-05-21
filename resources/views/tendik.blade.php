@@ -282,7 +282,7 @@ footer {
   <div class="photo-section">
     <div class="photo-wrapper">
       <h2 class="photo-title">Asisten Tendik PPM Al Kautsar</h2>
-      <img src="{{ url('/img/tendik.jpg') }}" alt="Foto Bersama Tendik">
+      <img src="{{ url('/img/tendik.jpg') }}" alt="Foto Bersama">
     </div>
   </div>
 
@@ -303,7 +303,7 @@ footer {
 
 <footer>
   <div class="container">
-    <p>&copy; 2025 PPM Al Kautsar. All rights reserved. | Developed by Meownyala Team</p>
+    <p>&copy; 2025 PPM Al Kautsar. Hak cipta dilindungi undang-undang. | Dikembangkan oleh Tim Meownyala</p>
   </div>
 </footer>
 

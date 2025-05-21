@@ -51,6 +51,11 @@ Route::post('ulasan', [UlasanController::class, 'store'])->name('ulasan.store');
 
 //Rute untuk Pengguna (lihat alumni)
 Route::get('home/alumnis', [AlumnisController::class, 'index'])->name('alumnis');
+// Route untuk publik (sudah ada)
+Route::get('/alumnis', [AlumnisController::class, 'index'])->name('alumnis.publik');
+// Route untuk admin
+Route::get('/admin/alumnis', [AlumnisController::class, 'adminIndex'])->name('admin.alumnis.index');
+
 
 // Rute untuk Pengguna (lihat  santri)
 Route::get('home/santri', [SantriController::class, 'index'])->name('santri');

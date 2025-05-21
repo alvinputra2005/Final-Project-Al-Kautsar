@@ -3,7 +3,7 @@
 @section('content')
 <div id="beranda-section" class="position-relative overflow-hidden">
     <div class="carousel-background">
-      <div id="carousel-beranda" class="carousel slide" data-ride="carousel" data-interval="2500">
+      <div id="carousel-beranda" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/dpn/1.jpg" class="d-block w-100" alt="Foto 1" />
@@ -266,7 +266,7 @@
       </div>
       <div class="stat-box">
         <div class="icon"><i class="fas fa-users"></i></div>
-        <h3 class="counter" data-target="1200">800++</h3>
+        <h3 class="counter" data-target="1200">400++</h3>
         <p>Alumni</p><br>
         <a href="{{ route('alumnis') }}" class="btn-stat">Info Alumni</a>
       </div>

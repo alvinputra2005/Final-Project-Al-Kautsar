@@ -372,7 +372,7 @@ body {
 
 <footer>
     <div class="container">
-        <p>&copy; 2025 PPM Al Kautsar. All rights reserved. | Developed by Meownyala Team</p>
+        <p>&copy; 2025 PPM Al Kautsar. Hak cipta dilindungi undang-undang. | Dikembangkan oleh Tim Meownyala</p>
     </div>
 </footer>
 
