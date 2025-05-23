@@ -52,7 +52,7 @@ class AdminController extends Controller
         'bidang_keahlian' => 'required|string|max:255',
         'pengalaman' => 'nullable|string',
         'asal' => 'nullable|string',
-        'contact' => 'nullable|string',
+        'contact' => 'required|numeric|min:1'   ,
         'riwayat_pendidikan' => 'nullable|string',
     ]);
 
